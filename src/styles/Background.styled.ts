@@ -10,5 +10,5 @@ export const BackgroundWrapper = styled.div<Props>`
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 30vh;
+  height: 40vh;
 `;

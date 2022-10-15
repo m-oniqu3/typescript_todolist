@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { TodoItem, Todos } from "../../../types/TodoTypes";
+import type { TodoItem, Todos } from "../../../types/TodoTypes";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
 const initialState: Todos = {

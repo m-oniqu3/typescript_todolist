@@ -1,3 +1,4 @@
+export type TodoStatus = "active" | "completed";
 export interface TodoItem {
   id: number | null;
   todo: String;
@@ -6,5 +7,3 @@ export interface TodoItem {
 export interface Todos {
   todoList: TodoItem[];
 }
-
-export type TodoStatus = "active" | "completed";
