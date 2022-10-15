@@ -1,6 +1,8 @@
 import React from "react";
 import { useAppSelector } from "../../store/hooks";
 import { List } from "../../styles/List.styled";
+import Delete from "../../assets/icon-cross.svg";
+import Check from "../../assets/icon-check.svg";
 
 const TodoList = () => {
   const { todoList } = useAppSelector((state) => state.todos);
@@ -9,9 +11,18 @@ const TodoList = () => {
     return (
       <li key={task.id}>
         <div className="task">
-          <div>check</div>
-          <p>{task.todo}</p>
-          <div>x</div>
+          <div className="task__content">
+            <div className="circle">
+              <figure>
+                <img src={Check} alt="checkmark" />
+              </figure>
+            </div>
+            <p>{task.todo}</p>
+          </div>
+
+          <figure className="delete">
+            <img src={Delete} alt="delete icon" />
+          </figure>
         </div>
       </li>
     );
