@@ -22,5 +22,10 @@ export const Form = styled.form`
     border-radius: 5px;
     border: none;
     width: 100%;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
   }
 `;

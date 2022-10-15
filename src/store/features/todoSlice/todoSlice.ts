@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Action, TodoItem, Todos } from "../../../types/TodoTypes";
+import { TodoItem, Todos } from "../../../types/TodoTypes";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
 const initialState: Todos = {
@@ -10,7 +10,9 @@ const todoSlice = createSlice({
   name: "todo",
   initialState,
   reducers: {
-    addTodo(state: Todos, action: PayloadAction<TodoItem>) {},
+    addTodo(state: Todos, action: PayloadAction<TodoItem>) {
+      state.todoList.unshift(action.payload);
+    },
   },
 });
 
