@@ -1,11 +1,15 @@
 import React from "react";
-import { GlobalStyles } from "./styles/Global.css";
+import Background from "./components/background/Background";
+import Heading from "./components/heading/Heading";
+import { GlobalStyles } from "./styles/Global.styled";
 
 const App = () => {
   return (
     <div>
       <GlobalStyles />
-      App
+      <Background>
+        <Heading />
+      </Background>
     </div>
   );
 };
