@@ -16,17 +16,17 @@ export const List = styled.ul`
 
     .task {
       display: grid;
-      grid-template-columns: 85% auto;
+      grid-template-columns: 11fr 1fr;
       gap: 1rem;
-      place-content: center;
-      padding: 1rem 1.5rem;
+      /* place-content: center; */
+      padding: 1rem;
 
       &__content {
         display: grid;
-        grid-template-columns: 10% auto;
-        place-items: start;
-        place-content: start;
+        grid-template-columns: 1rem 1fr;
 
+        /* place-items: start;
+        place-content: start; */
         gap: 1rem;
 
         p {
