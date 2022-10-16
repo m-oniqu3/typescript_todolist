@@ -1,8 +1,7 @@
-export type TodoStatus = "active" | "completed";
 export interface TodoItem {
-  id: number | null;
+  id: number;
   todo: String;
-  status: TodoStatus;
+  completed: boolean;
 }
 export interface Todos {
   todoList: TodoItem[];

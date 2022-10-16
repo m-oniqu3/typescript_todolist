@@ -19,7 +19,7 @@ const TodoInput = () => {
     const currentTime = new Date().getTime();
 
     //dispatch action to add todo
-    dispatch(addTodo({ id: currentTime, todo: task, status: "active" }));
+    dispatch(addTodo({ id: currentTime, todo: task, completed: false }));
     setTask("");
   };
 
